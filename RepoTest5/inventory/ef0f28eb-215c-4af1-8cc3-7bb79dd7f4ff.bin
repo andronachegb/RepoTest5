@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
 <header>
-<name>5GC-b2b-D-3TS</name>
-<description>Emulated SUT: 2 ports (ipv4)
-TS 1: 1 port (ipv4)
-TS 2: 1 port (ipv4)
+<name>5GC-b2b-D-2TS</name>
+<description>+ Emulated SUT: 2 ports
++ TS 1: 3 ports
 
-Applicable tests:</description>
+Applicable tests:
+...</description>
 </header>
 <illustration>
 <layer/>
@@ -16,13 +16,13 @@ Applicable tests:</description>
 <property isimportant="false" name="name">Landslide TAS Abstract Group</property>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="collapsed"/>
-<boundary height="395" width="380" x="135.33508991644703" y="245.69528383746263"/>
+<boundary height="395" width="380" x="135.33508991644703" y="238.19528383746263"/>
 <resource guid="620e66bd-e8c6-4830-b4d5-2e3ab3bf4cf5" id="ifa6eaab9-a4f5-4c29-86c4-33c408cb4c7d" shared="true" type="device">
 <property isimportant="false" name="name">TAS</property>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=620e66bd-e8c6-4830-b4d5-2e3ab3bf4cf5</property>
 <property isimportant="false" name="reservationTime">IMMEDIATE</property>
-<property isimportant="false" name="ilo_iconId">b0607229-3a2c-4509-85d0-e959ca999106</property>
+<property isimportant="false" name="ilo_iconId">db899085-c462-4533-a9c6-945f56944b96</property>
 <property isimportant="false" name="hostResource_topologyResourceId"/>
 <property isimportant="false" name="hostResource_parentType"/>
 <property isimportant="false" name="ilo_shape">RECTANGLE</property>
@@ -30,33 +30,12 @@ Applicable tests:</description>
 <boundary height="100" width="100" x="20" y="35"/>
 <property name="inventoryName"/>
 </resource>
-<resource guid="d4ff8442-46cd-43eb-a0be-605a5be96063" id="ic6aea23f-9b43-409d-8634-83d3168d5aa5" shared="true" type="device">
-<property isimportant="false" name="name">TS 2</property>
-<property isimportant="false" name="description"/>
-<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=d4ff8442-46cd-43eb-a0be-605a5be96063</property>
-<property isimportant="false" name="reservationTime">IMMEDIATE</property>
-<property isimportant="false" name="ilo_iconId">2b7b4db6-526d-48b9-8997-75589eaf3dc6</property>
-<property isimportant="false" name="hostResource_topologyResourceId">i0fb26349-6d0c-41f4-8af5-c3185bfa3cad</property>
-<property isimportant="false" name="hostResource_parentType">PARENT</property>
-<property isimportant="false" name="ilo_shape">RECTANGLE</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide TS] AND [Status]='READY'</extensions>
-<boundary height="100" width="100" x="260" y="275"/>
-<resource guid="iad17d168-da61-40b1-bc3c-89eaa0dce0bc" id="iad17d168-da61-40b1-bc3c-89eaa0dce0bc" type="port">
-<property isimportant="false" name="name">Port 1</property>
-<property isimportant="false" name="description"/>
-<property isimportant="false" name="connectivity">any</property>
-<property isimportant="false" name="keepOnRemoveConnection">true</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
-<property name="inventoryName"/>
-</resource>
-<property name="inventoryName"/>
-</resource>
 <resource guid="76b8cea2-e4e1-4df7-a527-2b3e7ffb4c60" id="i872931de-7476-421e-a929-4dae9698f0ef" shared="true" type="device">
 <property isimportant="false" name="name">TS 1</property>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=76b8cea2-e4e1-4df7-a527-2b3e7ffb4c60</property>
 <property isimportant="false" name="reservationTime">IMMEDIATE</property>
-<property isimportant="false" name="ilo_iconId">db700bf4-3c2c-4e4a-b0d0-36f31a84f826</property>
+<property isimportant="false" name="ilo_iconId">db899085-c462-4533-a9c6-945f56944b96</property>
 <property isimportant="false" name="hostResource_topologyResourceId">i0fb26349-6d0c-41f4-8af5-c3185bfa3cad</property>
 <property isimportant="false" name="hostResource_parentType">PARENT</property>
 <property isimportant="false" name="ilo_shape">RECTANGLE</property>
@@ -70,6 +49,22 @@ Applicable tests:</description>
 <extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
 <property name="inventoryName"/>
 </resource>
+<resource guid="i4e650816-c5d2-4cdd-be5c-689249e34c89" id="i4e650816-c5d2-4cdd-be5c-689249e34c89" type="port">
+<property isimportant="false" name="name">Port 2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
+<property name="inventoryName"/>
+</resource>
+<resource guid="i1c92151e-692d-489f-9f0b-e0cb64ea35b3" id="i1c92151e-692d-489f-9f0b-e0cb64ea35b3" type="port">
+<property isimportant="false" name="name">Port 3</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="connectivity">any</property>
+<property isimportant="false" name="keepOnRemoveConnection">true</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
+<property name="inventoryName"/>
+</resource>
 <property name="inventoryName"/>
 </resource>
 <resource guid="5acd1a4c-c5c9-4e17-88ae-8001d7541b09" id="i11d01c6a-8739-4783-9115-fa425f195d20" shared="true" type="device">
@@ -77,7 +72,7 @@ Applicable tests:</description>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=5acd1a4c-c5c9-4e17-88ae-8001d7541b09</property>
 <property isimportant="false" name="reservationTime">IMMEDIATE</property>
-<property isimportant="false" name="ilo_iconId">f2de931a-ae78-460f-98f5-e13676c03dd7</property>
+<property isimportant="false" name="ilo_iconId">db899085-c462-4533-a9c6-945f56944b96</property>
 <property isimportant="false" name="hostResource_topologyResourceId">i0fb26349-6d0c-41f4-8af5-c3185bfa3cad</property>
 <property isimportant="false" name="hostResource_parentType">PARENT</property>
 <property isimportant="false" name="ilo_shape">RECTANGLE</property>
@@ -88,7 +83,7 @@ Applicable tests:</description>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="connectivity">any</property>
 <property isimportant="false" name="keepOnRemoveConnection">true</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true</extensions>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
 <property name="inventoryName"/>
 </resource>
 <resource guid="i0c4d2751-e266-4538-a3c2-050f62be3aab" id="i0c4d2751-e266-4538-a3c2-050f62be3aab" type="port">
@@ -96,7 +91,7 @@ Applicable tests:</description>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="connectivity">any</property>
 <property isimportant="false" name="keepOnRemoveConnection">true</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true</extensions>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
 <property name="inventoryName"/>
 </resource>
 <property name="inventoryName"/>
@@ -106,7 +101,7 @@ Applicable tests:</description>
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=a2460977-d696-4d6d-a05e-3504cc5d83e2</property>
 <property isimportant="false" name="reservationTime">IMMEDIATE</property>
-<property isimportant="false" name="ilo_iconId">b7551230-6726-40cc-a88b-21e4674cd6ac</property>
+<property isimportant="false" name="ilo_iconId">db899085-c462-4533-a9c6-945f56944b96</property>
 <property isimportant="false" name="hostResource_topologyResourceId">ifa6eaab9-a4f5-4c29-86c4-33c408cb4c7d</property>
 <property isimportant="false" name="hostResource_parentType">PARENT</property>
 <property isimportant="false" name="ilo_shape">RECTANGLE</property>
