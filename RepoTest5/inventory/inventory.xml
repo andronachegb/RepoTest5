@@ -1491,10 +1491,10 @@
 			</attachment>
 		</topology>
 		<topology>
-			<name>5GC-b2b-D-2TS</name>
+			<name>5GC-b2b-D-3TS</name>
 			<attachment>
-				<id>ef0f28eb-215c-4af1-8cc3-7bb79dd7f4ff</id>
-				<name>5GC-b2b-D-2TS</name>
+				<id>4adc1f29-d341-4fca-80b6-5a6d3f9146f1</id>
+				<name>5GC-b2b-D-3TS</name>
 				<contentType>application/xml</contentType>
 			</attachment>
 		</topology>
@@ -1586,5 +1586,32 @@
             <contentType>application/xml</contentType>
          </attachment>
       </topology>
+	  <topology>
+			<name>5GC-b2b-P-4TS</name>
+			<versionId>c939c44e-0fc0-4063-866d-c8b080bce425</versionId>
+			<attachment>
+				<id>9a8d4363-1109-44ad-88b0-004b9b5b181e</id>
+				<name>5GC-b2b-P-4TS</name>
+				<contentType>application/xml</contentType>
+			</attachment>
+		</topology>
+		<topology>
+			<name>5GC-b2b-Q-4TS</name>
+			<versionId>e6b0196f-9f0c-4a29-8085-1038230926da</versionId>
+			<attachment>
+				<id>60ac61cb-7c09-4636-89a5-7684737849b1</id>
+				<name>5GC-b2b-Q-4TS</name>
+				<contentType>application/xml</contentType>
+			</attachment>
+		</topology>
+		<topology>
+			<name>5GC-b2b-R-3TS</name>
+			<versionId>8cd870e4-0415-49a4-ad80-5ec3785b7d2b</versionId>
+			<attachment>
+				<id>ef4f62c7-3a18-4f72-8ef5-d0f9edaf8c89</id>
+				<name>5GC-b2b-R-3TS</name>
+				<contentType>application/xml</contentType>
+			</attachment>
+		</topology>
 	</topologies>
 </inventory>
