@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>Export</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="i21ba31cf-3652-4576-b11e-3078339c77ae" id="i21ba31cf-3652-4576-b11e-3078339c77ae" shared="false" type="group">
+<property isimportant="false" name="name">Orch T1 Group</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="collapsed"/>
+<boundary height="275" width="140" x="802" y="146"/>
+<resource guid="a139cf8a-7a09-4bad-a515-3001cbc1f997" id="if242b13a-2ba6-491d-9408-b51aafcc3dbf" shared="true" type="device">
+<property isimportant="false" name="name">Orch T1</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=a139cf8a-7a09-4bad-a515-3001cbc1f997</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<property isimportant="false" name="templateId">24f487ce-2241-41f7-85d7-9595ddfdd56b</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T1]</extensions>
+<boundary height="100" width="100" x="20" y="34.99999999999997"/>
+</resource>
+<resource guid="9f3dcdfb-6553-427b-a660-1529f35d3c37" id="i7d5737de-c1db-4288-bcb0-5e99a01b122d" shared="true" type="device">
+<property isimportant="false" name="name">Orch T2</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=9f3dcdfb-6553-427b-a660-1529f35d3c37</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId"/>
+<property isimportant="false" name="hostResource_topologyResourceId">if242b13a-2ba6-491d-9408-b51aafcc3dbf</property>
+<property isimportant="false" name="hostResource_parentType">PARENT</property>
+<property isimportant="false" name="orchestratedResourceRole">S1_VELOCITY_SELECTED</property>
+<property isimportant="false" name="templateId">474230c4-81a3-44c5-aa81-9831bfb31165</property>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[T2]</extensions>
+<boundary height="100" width="100" x="20" y="155"/>
+</resource>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
