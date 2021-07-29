@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<testCase version="8.6.0.202107090704">
+<testCase version="8.6.0.202107270221">
     <general>
         <tags>tag1,tag2,tag3</tags>
+        <language>Python</language>
     </general>
     <testbed>project://RepoTest6/topologies/top1.tbml</testbed>
     <procedures>
@@ -60,6 +61,60 @@
                         <body>print(param(&apos;tbml/body/resources&apos;))</body>
                     </command>
                     <applicationProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                </item>
+                <item guid="85a2eac1-e766-4098-875e-aa6c9d44cfdf" action="open" session="s1">
+                    <command>
+                        <body>application:com.fnfr.itest.applications.webservices.restful</body>
+                    </command>
+                    <postProcessing>
+                        <analysisRules>
+                            <item>
+                                <extractorInfo extractorType="regex">
+                                    <extractorProperties type="com.fnfr.svt.mapping.regex.extractors.RegexExtractorPropertyGroup">
+                                        <regex>name: (\\S+)</regex>
+                                    </extractorProperties>
+                                </extractorInfo>
+                                <processorInfo ruleType="assert">
+                                    <ruleProperties type="com.fnfr.svt.execution.builtin.processors.AssertionPropertyGroup">
+                                        <expression>value == 1</expression>
+                                        <actionsWhenTrue>
+                                            <item actionId="DeclareExecutionIssue">
+                                                <actionProperties type="com.fnfr.svt.execution.builtin.actions.ExecutionIssuePropertyGroup" severity="OK">
+                                                    <message>{auto_message_true}</message>
+                                                </actionProperties>
+                                            </item>
+                                            <item actionId="PassTestIfNotAlreadyFailed">
+                                                <actionProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                                            </item>
+                                        </actionsWhenTrue>
+                                        <actionsWhenFalse>
+                                            <item actionId="DeclareExecutionIssue">
+                                                <actionProperties type="com.fnfr.svt.execution.builtin.actions.ExecutionIssuePropertyGroup">
+                                                    <message>{auto_message_false}</message>
+                                                </actionProperties>
+                                            </item>
+                                            <item actionId="FailTest">
+                                                <actionProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                                            </item>
+                                        </actionsWhenFalse>
+                                    </ruleProperties>
+                                </processorInfo>
+                            </item>
+                        </analysisRules>
+                    </postProcessing>
+                    <applicationProperties type="com.fnfr.svt.documents.OpenStepPropertyGroup">
+                        <stepProperties type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                        <sessionProperties type="com.fnfr.svt.adapter.automation.tools.common.documents.TransferableDocumentObject" transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.restful.RESTfulSessionProperties">
+                            <httpHeader inherit="false" transferableToolId="com.fnfr.itest.applications.webservices.restful">
+                                <memberClasses>
+                                    <item>com.fnfr.itest.applications.webservices.properties.HTTPHeaderEntry</item>
+                                </memberClasses>
+                                <item transferableToolId="com.fnfr.itest.applications.webservices.restful" transferableType="com.fnfr.itest.applications.webservices.properties.HTTPHeaderEntry" header="X-Auth-Token" header.inherit="false" value="[token]" value.inherit="false"/>
+                            </httpHeader>
+                        </sessionProperties>
+                        <sessionClass type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                        <sessionVersion type="com.fnfr.svt.documents.EmptyPropertyGroup"/>
+                    </applicationProperties>
                 </item>
             </steps>
         </item>
