@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><tbml xmlns="http://www.teslaalliance.org/trs/tbml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.teslaalliance.org/trs/tbml/1.0/tbml-core.xsd">
+<header>
+<name>Tag test 3</name>
+<description/>
+</header>
+<illustration>
+<layer/>
+</illustration>
+<body>
+<resources>
+<resource guid="fea52e8b-8d75-455e-baa5-80751d9625c7" id="i87d89274-573f-4bc6-8ccd-2b869d4f357d" shared="true" type="device">
+<property isimportant="false" name="name">PC</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=fea52e8b-8d75-455e-baa5-80751d9625c7</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">9ee93daa-1109-4038-bd29-864cced79399</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="100" width="100" x="-158.4052065800115" y="-86.89219012998217"/>
+<property name="inventoryName"/>
+</resource>
+<resource guid="fea52e8b-8d75-455e-baa5-80751d9625c7" id="i121017e3-ff30-45e5-9cc5-8e81dfb8a129" shared="true" type="device">
+<property isimportant="false" name="name">PC (2)</property>
+<property isimportant="false" name="description"/>
+<property isimportant="false" name="iconURI">ilo://api/0/resource/icon?id=fea52e8b-8d75-455e-baa5-80751d9625c7</property>
+<property isimportant="false" name="reservationTime">IMMEDIATE</property>
+<property isimportant="false" name="ilo_iconId">9ee93daa-1109-4038-bd29-864cced79399</property>
+<property isimportant="false" name="hostResource_topologyResourceId"/>
+<property isimportant="false" name="hostResource_parentType"/>
+<property isimportant="false" name="ilo_shape">RECTANGLE</property>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[PC]</extensions>
+<boundary height="100" width="100" x="405.5947934199885" y="-226.89219012998217"/>
+<property name="inventoryName"/>
+</resource>
+</resources>
+<connectivity/>
+</body>
+</tbml>
