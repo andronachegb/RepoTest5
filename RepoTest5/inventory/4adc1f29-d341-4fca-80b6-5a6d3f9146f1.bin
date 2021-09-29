@@ -6,7 +6,8 @@ TS 1: 1 port (ipv4)
 TS 2: 1 port (ipv4)
 
 Applicable tests:
-+ I-AMF-16-PF-UE_Triggered_SrvReq-5G_AKA-SUCI-NullEncr</description>
+1. A-AMF-SMF-3-CP
+2. I-AMF-14-PF</description>
 </header>
 <illustration>
 <layer/>
@@ -89,7 +90,7 @@ Applicable tests:
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="connectivity">any</property>
 <property isimportant="false" name="keepOnRemoveConnection">true</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true</extensions>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
 <property name="inventoryName"/>
 </resource>
 <resource guid="i0c4d2751-e266-4538-a3c2-050f62be3aab" id="i0c4d2751-e266-4538-a3c2-050f62be3aab" type="port">
@@ -97,7 +98,7 @@ Applicable tests:
 <property isimportant="false" name="description"/>
 <property isimportant="false" name="connectivity">any</property>
 <property isimportant="false" name="keepOnRemoveConnection">true</property>
-<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true</extensions>
+<extensions type="com.fnfr.rm.condition" xs:namespace="com.fnfr.rm.condition">template[Landslide Ethernet Port Interface] AND bool[IPV4]=true AND bool[IPV6]=true</extensions>
 <property name="inventoryName"/>
 </resource>
 <property name="inventoryName"/>
